@@ -53,14 +53,19 @@ html(lang="en")
                 .oba 
                     .first-card 
                         p.p про нашу
-                        p.p компанію
-                        p Наша компанія пропонує ряд
-                        p цікавих-розважальних послуг, які
-                        p принесуть вам ряд вражень!
+                        p.pp компанію
+                        p.ppp Наша компанія пропонує ряд
+                        p.ppp цікавих-розважальних послуг, 
+                        p.ppp які принесуть вам ряд вражень!
+                        button.headerButton детальніше 
+                        p.h(id="toph") * - зверніть увагу, зміна ціни може
+                        p.h залежати від курсу долара.
                     .other-card 
                         +card(cardsInfo.veloIcon)
                         +card(cardsInfo.circle)
                         +card(cardsInfo.think)
+                .help
+                    a(href="#").lastTitle Дивитись усі плани &#169;
         footer
             .wrapper 
 
