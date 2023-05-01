@@ -1,0 +1,1 @@
+let burger=document.querySelector(".burger"),menu=document.querySelector(".menu");burger.onclick=function(){menu.classList.toggle("active-burger"),burger.classList.toggle("burger-open")};

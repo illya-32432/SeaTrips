@@ -1,0 +1,92 @@
+html
+    font-size: 1px
+body
+    margin: 0
+ul,
+li,
+ol
+    list-style: none
+.wrapper
+    max-width: 290rem
+    margin: 0 auto
+    position: relative
+.container
+    padding-top: 20rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+header
+    background: url(../img/header-background.jpg), no-repeat
+    background-size: cover
+    min-height: 600rem
+ul li a
+    font-size: 14rem
+    text-transform: uppercase
+    text-decoration: none
+    padding: 15rem 30rem
+
+
+    //BURGER
+
+.burger
+    position: absolute
+    width: 50rem
+    height: 50rem
+    cursor: pointer
+    right: 0
+.burger span,
+.burger:before,
+.burger:after
+    content: ""
+    position: absolute
+    width: 50px
+    height: 5px
+    background-color: #0b037a
+    border-radius: 5px
+    top: 50%
+    transition: box-shadow .25s ease-in-out
+.burger span
+    transform: translateY(-50%)
+
+.burger:before
+    top: 10rem
+
+.burger:after
+    top: 35rem
+
+.burger-open span
+    transition: .5s
+    transform: rotate(-45deg) translateX(0px)
+
+.burger-open:before
+    transform: scale(0)
+
+.burger-open:after
+    transition: .5s
+    transform: rotate(45deg) translateX(-8px) translateY(-7px)
+
+  
+.menu 
+    display: none
+    position: absolute
+    left: 80px
+    top: 80px
+    margin: 0
+    padding-left: 0
+    list-style: none
+    background-color: pink
+    border-radius: 5px
+    overflow: hidden
+
+.menu li + li 
+    border-top: 1px solid brown
+
+.menu a 
+    display: block
+    padding: 20px 40px
+    text-decoration: none
+    color: brown
+
+
+.active-burger 
+    display: block

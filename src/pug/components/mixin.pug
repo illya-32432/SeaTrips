@@ -1,0 +1,98 @@
+- 
+    let mainMenu = [
+        ["Home", "#"],
+        ["Why MISOCIAL", "#"],
+        ["Features", "#"],
+        ["Articles", "#"],
+        ["Pricing", "#"],
+    ]
+mixin menu(menu, colorTheme="light")
+    .navigation 
+        .logo 
+            img(src="img/Symbol.png", alt="logo") 
+            p(class=colorTheme)
+                a(href="#") Misocial
+        .double
+            nav 
+                ul.menu(class=colorTheme)
+                    for item in menu 
+                        li  
+                            a(href=item[1]) #{item[0]}
+            bottom.bottom Get Started
+        
+        //- Бургер меню 
+
+        .burger 
+            span
+
+-
+    let cardsInfo = {
+        satelite: {
+            img: "img/satelite.svg",
+            alt: "satelite",
+            personal: "personal",
+            currency: "$",
+            price: 0,
+            isMonth: fasle,
+            description: [
+                "Lorem ipsum dolor sit amet.",
+                "sed do eiusmod tempor incididunt ut.",
+                "Labore et dolore magna aliqua.",
+                "quis nostrud exercitation ullamco laboris.",
+                "Ea commodo consequat.",
+            ],
+            btnText: "select plan",
+            href: "#",
+        },
+        mars: {
+            img: "img/mars.svg",
+            alt: "mars",
+            personal: "personal",
+            currency: "$",
+            price: 29,
+            isMonth: true,
+            description: [
+                "Lorem ipsum dolor sit amet.",
+                "sed do eiusmod tempor incididunt ut.",
+                "Labore et dolore magna aliqua.",
+                "quis nostrud exercitation ullamco laboris.",
+                "Ea commodo consequat.",
+            ],
+            btnText: "select plan",
+            href: "#",
+        },
+        rocket: {
+            img: "img/rocket.svg",
+            alt: "rocket",
+            personal: "personal",
+            currency: "$",
+            price: 49,
+            isMonth: true,
+            description: [
+                "Lorem ipsum dolor sit amet.",
+                "sed do eiusmod tempor incididunt ut.",
+                "Labore et dolore magna aliqua.",
+                "quis nostrud exercitation ullamco laboris.",
+                "Ea commodo consequat.",
+            ],
+            btnText: "select plan",
+            href: "#",
+        }
+    }
+
+mixin card (oneCard)
+    figure.card
+        figcaption.fig
+            img(src=oneCard.img, alt=oneCard.alt)
+            p.personal #{oneCard.personal}
+            p.price
+                bsup.currency #{oneCard.currency}
+                b #{oneCard.price}
+                if oneCard.isMonth
+                    |/month
+                else 
+                    |/year
+            ul.description
+                for oneText in oneCard.description
+                    li #{oneText}
+            a(href=oneCard.href) #{oneCard.btnText}
