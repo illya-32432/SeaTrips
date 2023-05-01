@@ -15,6 +15,7 @@ ol
     display: flex
     justify-content: space-between
     align-items: center
+    margin-bottom: 125rem
 header
     background: url(../img/header-background.jpg), no-repeat
     background-size: cover
@@ -39,10 +40,10 @@ ul li a
 .burger:after
     content: ""
     position: absolute
-    width: 50px
-    height: 5px
+    width: 50rem
+    height: 5rem
     background-color: #0b037a
-    border-radius: 5px
+    border-radius: 5rem
     top: 50%
     transition: box-shadow .25s ease-in-out
 .burger span
@@ -56,37 +57,81 @@ ul li a
 
 .burger-open span
     transition: .5s
-    transform: rotate(-45deg) translateX(0px)
+    transform: rotate(-45deg) translateX(0rem)
 
 .burger-open:before
     transform: scale(0)
 
 .burger-open:after
     transition: .5s
-    transform: rotate(45deg) translateX(-8px) translateY(-7px)
+    transform: rotate(45deg) translateX(-8rem) translateY(-7rem)
 
   
 .menu 
     display: none
     position: absolute
-    left: 80px
-    top: 80px
+    left: 80rem
+    top: 80rem
     margin: 0
     padding-left: 0
     list-style: none
     background-color: pink
-    border-radius: 5px
+    border-radius: 5rem
     overflow: hidden
 
 .menu li + li 
-    border-top: 1px solid brown
+    border-top: 1rem solid brown
 
 .menu a 
     display: block
-    padding: 20px 40px
+    padding: 20rem 40rem
     text-decoration: none
     color: brown
 
 
 .active-burger 
     display: block
+
+
+    //BURGER
+
+
+h1
+    font-size: 60rem
+    letter-spacing: 1rem
+    line-height: 110rem
+    text-transform: uppercase
+    color: #ffffff
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+    margin: 0
+    @media screen and (min-width: 425px)
+        font-size: 72rem
+p
+    font-size: 16rem
+    line-height: 24rem
+    color: #ffffff
+    font-weight: 400
+    font-style: italic
+    font-family: "Rubik"
+    text-align: center
+    margin: 0
+    @media screen and (min-width: 425px)
+        width: 528rem
+.headerButton
+    font-size: 16rem
+    letter-spacing: 1rem
+    text-transform: uppercase
+    color: #fdfcfb
+    background-color: #ffb700
+    font-weight: 400
+    padding: 10rem 25rem
+    border-radius: 25rem
+    font-family: "Rubik"
+    text-align: center
+    border: none
+    margin: 0 auto
+.top
+    text-align: center
+    top: 50rem
