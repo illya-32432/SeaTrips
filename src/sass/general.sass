@@ -35,6 +35,8 @@ header
     background-size: cover
     background-position: 49% 0
     padding-bottom: 30rem
+    @media screen and (min-width: 1360px)
+        background-position: 0%
 ul li a
     font-size: 14rem
     text-transform: uppercase
@@ -107,6 +109,7 @@ ul li a
             color: #fff
             padding: 0
         a:hover
+            transition: .5s
             color: #ffb700
 
 .menu li + li 
@@ -117,6 +120,7 @@ ul li a
     padding: 20rem 40rem
     text-decoration: none
     color: brown
+    font-family: "Rubik"
 
 
 .active-burger 
@@ -162,7 +166,13 @@ p
     font-family: "Rubik"
     text-align: center
     border: none
+    transition: .5s
     margin-top: 25rem
+    cursor: pointer
+.headerButton:hover
+    transform: scale(1.1)
+    background-color: #e9c25e
+    transition: .5s
 .top
     text-align: center
     padding-bottom: 200rem
