@@ -1,7 +1,9 @@
 html
     font-size: 1px
+    scroll-behavior: smooth
 body
     margin: 0
+    scroll-behavior: smooth
 ul,
 li,
 ol
@@ -10,6 +12,14 @@ ol
     max-width: 290rem
     margin: 0 auto
     position: relative
+    @media screen and (min-width: 375px)
+        max-width: 340rem
+    @media screen and (min-width: 425px)
+        max-width: 400rem
+    @media screen and (min-width: 570px)
+        max-width: 480rem
+    @media screen and (min-width: 768px)
+        max-width: 700rem
 .container
     padding-top: 20rem
     display: flex
@@ -17,15 +27,17 @@ ol
     align-items: center
     margin-bottom: 125rem
 header
-    background: url(../img/header-background.jpg), no-repeat
+    background: linear-gradient(to bottom,rgba(244,247,249,0) 65%,#f4f7f9 93%,#f4f7f9 100%),url(../img/header-background.jpg), no-repeat
     background-size: cover
-    min-height: 600rem
+    background-position: 49% 0
+    padding-bottom: 30rem
 ul li a
     font-size: 14rem
     text-transform: uppercase
     text-decoration: none
     padding: 15rem 30rem
-
+.nav
+    position: relative
 
     //BURGER
 
@@ -70,8 +82,8 @@ ul li a
 .menu 
     display: none
     position: absolute
-    left: 80rem
-    top: 80rem
+    right: 0
+    top: 50rem
     margin: 0
     padding-left: 0
     list-style: none
@@ -99,13 +111,13 @@ ul li a
 h1
     font-size: 60rem
     letter-spacing: 1rem
-    line-height: 110rem
+    line-height: 90rem
     text-transform: uppercase
     color: #ffffff
     font-weight: 400
     font-family: "Rubik"
     text-align: center
-    margin: 0
+    margin: 0 0 20rem 0
     @media screen and (min-width: 425px)
         font-size: 72rem
 p
@@ -117,8 +129,9 @@ p
     font-family: "Rubik"
     text-align: center
     margin: 0
-    @media screen and (min-width: 425px)
+    @media screen and (min-width: 768px)
         width: 528rem
+        margin: 0 auto
 .headerButton
     font-size: 16rem
     letter-spacing: 1rem
@@ -131,7 +144,37 @@ p
     font-family: "Rubik"
     text-align: center
     border: none
-    margin: 0 auto
+    margin-top: 25rem
 .top
     text-align: center
-    top: 50rem
+    padding-bottom: 260rem
+.od
+    font-size: 36rem
+    letter-spacing: 1rem
+    line-height: 44rem
+    text-transform: uppercase
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+    font-style: normal
+.dr
+    font-size: 16rem
+    line-height: 24rem
+    color: #333333
+    font-weight: 400
+    font-style: italic
+    font-family: "Rubik"
+    text-align: center
+    margin: 10rem  auto
+.slider
+    display: flex
+    justify-content: center
+.slider-bg:before
+    content: ""
+    position: absolute
+    width: 20rem
+    height: 25rem
+    background-image: url(../img/slider.svg)
+.scroll
+    padding-top: 50rem
