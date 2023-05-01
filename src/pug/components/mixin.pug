@@ -1,82 +1,38 @@
-- 
-    let mainMenu = [
-        ["Home", "#"],
-        ["Why MISOCIAL", "#"],
-        ["Features", "#"],
-        ["Articles", "#"],
-        ["Pricing", "#"],
-    ]
-mixin menu(menu, colorTheme="light")
-    .navigation 
-        .logo 
-            img(src="img/Symbol.png", alt="logo") 
-            p(class=colorTheme)
-                a(href="#") Misocial
-        .double
-            nav 
-                ul.menu(class=colorTheme)
-                    for item in menu 
-                        li  
-                            a(href=item[1]) #{item[0]}
-            bottom.bottom Get Started
-        
-        //- Бургер меню 
-
-        .burger 
-            span
-
 -
     let cardsInfo = {
-        satelite: {
-            img: "img/satelite.svg",
-            alt: "satelite",
-            personal: "personal",
-            currency: "$",
-            price: 0,
-            isMonth: fasle,
+        veloIcon: {
+            img: "img/velo-icon.png",
+            alt: "velo-icon",
+            topTitle: "Тур на велосипедах",
+            price: 335,
+            currency: "грн",
             description: [
-                "Lorem ipsum dolor sit amet.",
-                "sed do eiusmod tempor incididunt ut.",
-                "Labore et dolore magna aliqua.",
-                "quis nostrud exercitation ullamco laboris.",
-                "Ea commodo consequat.",
-            ],
-            btnText: "select plan",
-            href: "#",
+                "Подорожуючи  на велосипеді,ви",
+                "поринете в атмосферу мальовничих гір", 
+                "чарівнмх краєвидів та шалених пригод."
+            ]
         },
-        mars: {
-            img: "img/mars.svg",
-            alt: "mars",
-            personal: "personal",
-            currency: "$",
-            price: 29,
-            isMonth: true,
+        circle: {
+            img: "img/circle.png",
+            alt: "circle",
+            topTitle: "Екскурсія на острів",
+            price: 500,
+            currency: "грн",
             description: [
-                "Lorem ipsum dolor sit amet.",
-                "sed do eiusmod tempor incididunt ut.",
-                "Labore et dolore magna aliqua.",
-                "quis nostrud exercitation ullamco laboris.",
-                "Ea commodo consequat.",
-            ],
-            btnText: "select plan",
-            href: "#",
+                "Подорож на острів занурить Вас у незабутнні пригоди.",
+                "Неймовірна краса  у будь-яку пору року."
+            ]
         },
-        rocket: {
-            img: "img/rocket.svg",
-            alt: "rocket",
-            personal: "personal",
-            currency: "$",
-            price: 49,
-            isMonth: true,
+        think: {
+            img: "img/think.png",
+            alt: "think-icon",
+            topTitle: "Особливе замовлення",
+            price: 250,
+            currency: "грн",
             description: [
-                "Lorem ipsum dolor sit amet.",
-                "sed do eiusmod tempor incididunt ut.",
-                "Labore et dolore magna aliqua.",
-                "quis nostrud exercitation ullamco laboris.",
-                "Ea commodo consequat.",
-            ],
-            btnText: "select plan",
-            href: "#",
+                "Обираючи цю подорож, Ви самостійно",
+                "робите її незабутнбою та не схожою на будь-які інші."
+            ]
         }
     }
 
@@ -84,15 +40,10 @@ mixin card (oneCard)
     figure.card
         figcaption.fig
             img(src=oneCard.img, alt=oneCard.alt)
-            p.personal #{oneCard.personal}
-            p.price
-                bsup.currency #{oneCard.currency}
-                b #{oneCard.price}
-                if oneCard.isMonth
-                    |/month
-                else 
-                    |/year
+            p.topTitlel #{oneCard.topTitle}
+            p
+                b.price #{oneCard.price}
+                b.currency #{oneCard.currency}
             ul.description
                 for oneText in oneCard.description
-                    li #{oneText}
-            a(href=oneCard.href) #{oneCard.btnText}
+                    li.styu #{oneText}

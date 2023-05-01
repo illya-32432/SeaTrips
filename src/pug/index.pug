@@ -9,9 +9,9 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet")
-
         title Туристична Компанія SEA TRIPS - Спіймай Хвилю Живи Яскраво!
     body 
+        include components/mixin
         header 
             .wrapper 
                 .container
@@ -50,6 +50,17 @@ html(lang="en")
         main    
             .wrapper 
                 .scroll(id="scroll")
+                .oba 
+                    .first-card 
+                        p.p про нашу
+                        p.p компанію
+                        p Наша компанія пропонує ряд
+                        p цікавих-розважальних послуг, які
+                        p принесуть вам ряд вражень!
+                    .other-card 
+                        +card(cardsInfo.veloIcon)
+                        +card(cardsInfo.circle)
+                        +card(cardsInfo.think)
         footer
             .wrapper 
 
