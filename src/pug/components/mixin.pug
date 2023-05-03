@@ -5,34 +5,37 @@
             alt: "velo-icon",
             topTitle: "Тур на велосипедах",
             price: 335,
-            currency: "грн *",
+            currency: "грн*",
             description: [
                 "Подорожуючи  на велосипеді,ви",
                 "поринете в атмосферу мальовничих гір", 
-                "чарівнмх краєвидів та шалених пригод."
-            ]
+                "чарівнмх краєвидів та шалених пригод.",
+            ],
+            praporec: false,
         },
         circle: {
             img: "img/circle.png",
             alt: "circle",
             topTitle: "Екскурсія на острів",
             price: 500,
-            currency: "грн *",
+            currency: "грн*",
             description: [
                 "Подорож на острів занурить Вас у незабутнні пригоди.",
-                "Неймовірна краса  у будь-яку пору року."
-            ]
+                "Неймовірна краса  у будь-яку пору року.",
+            ],
+            praporec: true,
         },
         think: {
             img: "img/think.png",
             alt: "think-icon",
             topTitle: "Особливе замовлення",
             price: 250,
-            currency: "грн *",
+            currency: "грн*",
             description: [
                 "Обираючи цю подорож, Ви самостійно",
-                "робите її незабутнбою та не схожою на будь-які інші."
-            ]
+                "робите її незабутнбою та не схожою на будь-які інші.",
+            ],
+            praporec: true,
         }
     }
 
@@ -50,49 +53,60 @@ mixin card (oneCard)
 
 -
     let secondcardsInfo = {
-        veloIcon: {
-            img: "img/velo-icon.png",
-            alt: "velo-icon",
-            topTitle: "Тур на велосипедах",
-            price: 335,
-            currency: "грн *",
+        romantick: { 
+            image: "img/romantic-trip.png",
+            alt: "romantick",
+            topTitleSec: "Романтична подорож на 2",
             description: [
-                "Подорожуючи  на велосипеді,ви",
-                "поринете в атмосферу мальовничих гір", 
-                "чарівнмх краєвидів та шалених пригод."
+                "Подорож у найромантичніші",
+                "куточки світу, занурить вас",
+                "у дивовижні пейзажі природи.",
+            ],
+            price: 2599,
+            currency: "грн.",
+        },
+        bikeTrip: { 
+            image: "img/bike-trip.png",
+            alt: "bikeTrip",
+            topTitleSec: "Велотур",
+            description: [
+                "Бажаєте прокататись з вітерцем",
+                "та ще й з критим краєвидом довкола?",
+                "Тоді швидше замовляй велотур!",
+            ],
+            price: 555,
+            currency: "грн."
+        },
+        island: {
+            image: "img/to-islands.png",
+            alt: "island-icon",
+            topTitleSec: "На острови!",
+            price: 1559,
+            currency: "грн.",
+            description: [
+                "Обираючи цю подорож, Ви самостійно",
+                "робите її незабутнбою та не схожою на будь-які інші."
             ]
         },
-        circle: {
-            img: "img/circle.png",
-            alt: "circle",
-            topTitle: "Екскурсія на острів",
-            price: 500,
-            currency: "грн *",
-            description: [
-                "Подорож на острів занурить Вас у незабутнні пригоди.",
-                "Неймовірна краса  у будь-яку пору року."
-            ]
-        },
-        think: {
-            img: "img/think.png",
-            alt: "think-icon",
-            topTitle: "Особливе замовлення",
-            price: 250,
-            currency: "грн *",
+        serfing: {
+            image: "img/surfing.png",
+            alt: "serfing-icon",
+            topTitleSec: "Катання на сьорфінгу",
+            price: 999,
+            currency: "грн.",
             description: [
                 "Обираючи цю подорож, Ви самостійно",
                 "робите її незабутнбою та не схожою на будь-які інші."
             ]
         }
     }
-
-mixin card (oneCard)
-    figure.card
+mixin cards (oneCardSecond)
+    figure.card-secondary
         figcaption.fig
             .best-offer
-            img(src=oneCard.img, alt=oneCard.alt)
-            p.topTitlel #{oneCard.topTitle}
+            img(src=oneCardSecond.image, alt=oneCardSecond.alt)
+            p.topTitleSec #{oneCardSecond.topTitleSec}
             p
-                b.price #{oneCard.price}
-                b.currency #{oneCard.currency}
-                p.styu #{oneCard.description}
+                p.styu #{oneCardSecond.description}
+                b.price #{oneCardSecond.price}
+                b.currency #{oneCardSecond.currency}
