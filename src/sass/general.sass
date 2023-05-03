@@ -288,6 +288,7 @@ p
     font-style: normal
     text-align: left
 .card
+    min-width: 270rem
     text-align: center
     border: none
     margin-bottom: 50rem
@@ -352,10 +353,25 @@ p
     padding-bottom: 10rem
 .other-card
     margin-top: 80rem
+    @media screen and (min-width: 1360px)
+        margin-top: 0
+        display: flex
+        column-gap: 50rem
 .oba
     @media screen and (min-width: 425px)
         max-width: 350rem
         margin: 0 auto
+    @media screen and (min-width: 1360px)
+        max-width: 100%
+        margin: 0 auto
+        display: flex
+        .oba-flex
+            display: flex
+            column-gap: 50rem
+.oboe
+    @media screen and (min-width: 1360px)
+        display: flex
+        align-items: center
 .h
     width: 228rem
     margin: 0
@@ -425,6 +441,8 @@ p
     background-position: center
     @media screen and (min-width: 768px)
         min-height: 300rem
+    @media screen and (min-width: 1360px)
+        background-size: contain
 .first-card
     max-width: 400rem
 h2
@@ -456,7 +474,7 @@ h2
     display: block
     @media screen and (min-width: 425px)
         display: flex
-        column-gap: 15rem
+        column-gap: 25rem
 .italic
     font-style: italic
     @media screen and (min-width: 768px)
@@ -464,6 +482,7 @@ h2
         margin: 0 auto
 .mini-card-silver
     background-color: #edf2f5
+    min-width: 225rem
 .groshi
     font-size: 24rem
     line-height: 44rem
@@ -472,6 +491,8 @@ h2
     font-family: "Rubik"
     text-align: center
     padding: 20rem 0 10rem 0
+    @media screen and (min-width: 1360px)
+        margin-top: 0
 .sup-title-grosh
     width: 165px
     font-size: 13rem
@@ -482,5 +503,20 @@ h2
     font-family: "Rubik"
     text-align: center
     padding-bottom: 20rem
+.stel
+    font-size: 29rem
+    line-height: 42rem
+    text-transform: uppercase
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
     @media screen and (min-width: 425px)
+        font-size: 36rem
+    @media screen and (min-width: 1360px)
+        margin-top: 0
+.xbor
+    @media screen and (min-width: 1360px)
+        display: flex
+        padding-top: 50rem
+        column-gap: 60rem
         
