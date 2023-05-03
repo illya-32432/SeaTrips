@@ -115,3 +115,8 @@ window.addEventListener('resize', resize)
 window.addEventListener('blur', pause)
 window.addEventListener('focus', resume)
 init()
+
+
+/////////////////////////////////////up animation snow
+
+
