@@ -55,8 +55,11 @@ mixin card (oneCard)
     let secondcardsInfo = {
         romantick: { 
             image: "img/romantic-trip.png",
+            imageSc: "img/znak.jpg",
+            altt: "znak",
             alt: "romantick",
             topTitleSec: "Романтична подорож на 2",
+            zamow: "замовити",
             description: [
                 "Подорож у найромантичніші",
                 "куточки світу, занурить вас",
@@ -67,8 +70,11 @@ mixin card (oneCard)
         },
         bikeTrip: { 
             image: "img/bike-trip.png",
+            imageSc: "img/znak.jpg",
+            altt: "znak",
             alt: "bikeTrip",
             topTitleSec: "Велотур",
+            zamow: "замовити",
             description: [
                 "Бажаєте прокататись з вітерцем",
                 "та ще й з критим краєвидом довкола?",
@@ -79,10 +85,13 @@ mixin card (oneCard)
         },
         island: {
             image: "img/to-islands.png",
+            imageSc: "img/znak.jpg",
+            altt: "znak",
             alt: "island-icon",
             topTitleSec: "На острови!",
             price: 1559,
             currency: "грн.",
+            zamow: "замовити",
             description: [
                 "Обираючи цю подорож, Ви самостійно",
                 "робите її незабутнбою та не схожою на будь-які інші."
@@ -90,10 +99,13 @@ mixin card (oneCard)
         },
         serfing: {
             image: "img/surfing.png",
+            imageSc: "img/znak.jpg",
+            altt: "znak",
             alt: "serfing-icon",
             topTitleSec: "Катання на сьорфінгу",
             price: 999,
             currency: "грн.",
+            zamow: "замовити",
             description: [
                 "Обираючи цю подорож, Ви самостійно",
                 "робите її незабутнбою та не схожою на будь-які інші."
@@ -108,5 +120,10 @@ mixin cards (oneCardSecond)
             p.topTitleSec #{oneCardSecond.topTitleSec}
             p
                 p.styu #{oneCardSecond.description}
-                b.price #{oneCardSecond.price}
-                b.currency #{oneCardSecond.currency}
+                .flexX
+                    .ssr
+                        b.price #{oneCardSecond.price}
+                        b.currency #{oneCardSecond.currency}
+                    .flex
+                        p.yello-Style(id="yello") #{oneCardSecond.zamow}
+                        img(id="dontPw")(src=oneCardSecond.imageSc, alt=oneCardSecond.altt)
