@@ -46,3 +46,53 @@ mixin card (oneCard)
                 b.price #{oneCard.price}
                 b.currency #{oneCard.currency}
                 p.styu #{oneCard.description}
+
+
+-
+    let secondcardsInfo = {
+        veloIcon: {
+            img: "img/velo-icon.png",
+            alt: "velo-icon",
+            topTitle: "Тур на велосипедах",
+            price: 335,
+            currency: "грн *",
+            description: [
+                "Подорожуючи  на велосипеді,ви",
+                "поринете в атмосферу мальовничих гір", 
+                "чарівнмх краєвидів та шалених пригод."
+            ]
+        },
+        circle: {
+            img: "img/circle.png",
+            alt: "circle",
+            topTitle: "Екскурсія на острів",
+            price: 500,
+            currency: "грн *",
+            description: [
+                "Подорож на острів занурить Вас у незабутнні пригоди.",
+                "Неймовірна краса  у будь-яку пору року."
+            ]
+        },
+        think: {
+            img: "img/think.png",
+            alt: "think-icon",
+            topTitle: "Особливе замовлення",
+            price: 250,
+            currency: "грн *",
+            description: [
+                "Обираючи цю подорож, Ви самостійно",
+                "робите її незабутнбою та не схожою на будь-які інші."
+            ]
+        }
+    }
+
+mixin card (oneCard)
+    figure.card
+        figcaption.fig
+            .best-offer
+            img(src=oneCard.img, alt=oneCard.alt)
+            p.topTitlel #{oneCard.topTitle}
+            p
+                b.price #{oneCard.price}
+                b.currency #{oneCard.currency}
+                p.styu #{oneCard.description}

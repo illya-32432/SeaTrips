@@ -95,9 +95,24 @@ html(lang="en")
                             .img
                                 span.koma 
                             p.paragrafItaly Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                            .name-clien
+                                p.Name Олег Набережний
+                                p.client клієнт
                             .imgsec
                                 span.Oleg 
-
+            .oba 
+                .wrapper
+                    .first-card-more 
+                        p.p(id="center") Спеціальні пропозиції тижня
+                        p.ppp(id="center") Гарячі праозиції, по-швидше обирай і поїхали! 
+                    .other-card 
+                        +card(cardsInfo.veloIcon)
+                        .oba-flex
+                            +card(cardsInfo.circle)
+                            +card(cardsInfo.think)
+                .help
+                    a(href="#").lastTitle Дивитись усі плани &#169;
+                span.hr
         footer
             .wrapper 
 
