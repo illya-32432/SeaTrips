@@ -134,3 +134,44 @@ mixin cards (oneCardSecond)
                     .flex
                         p.yello-Style(id="yello") #{oneCardSecond.zamow}
                         img(id="dontPw")(src=oneCardSecond.imageSc, alt=oneCardSecond.altt)
+
+-
+    let thirdCardsInfo = {
+        grafik: {
+            img: "img/file.svg",
+            alt: "file",
+            topTitleThird: "Графік роботи готелів.xls",
+            size: "Розмір файла: 10Mb",
+            mainThirdText: [
+                "Розклад роботи усіх наших готелів,",
+                "можете знайти за цим посиланням.",
+                "Та додатково завантажити їх фото.",
+            ],
+            download: "скачати"
+        },
+        information: {
+            img: "img/file.svg",
+            alt: "file",
+            topTitleThird: "Інформація про харчування.xls",
+            size: "Розмір файла: 10Mb",
+            mainThirdText: [
+                "У будь-якому нашому турі включені",
+                "сніданки у вартість. Якщо ж",
+                "бажаєте замовити додотково, то",
+                "ознайомтесь з умовами.",
+            ],
+            download: "скачати"
+        }
+    }
+mixin LastCardss (oneCardThird)
+    figure.card-trird 
+        figcaption.fig
+            .fullCars
+                .flex.align 
+                    .last-image-pack
+                        img.orange-file(src=oneCardThird.img, alt=oneCardThird.alt)
+                    .text-display-img
+                        h4.topTitleThird #{oneCardThird.topTitleThird}
+                p.size #{oneCardThird.size}
+                p.mainThirdText #{oneCardThird.mainThirdText}
+                a(href="#").download #{oneCardThird.download}
