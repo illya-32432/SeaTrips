@@ -688,7 +688,7 @@ b
 .imgsec
     background: url(../img/photo-Oleg.svg), no-repeat
     min-height: 95rem
-    width: 95rem
+    width: 110rem
     margin: 10rem auto
 .secondBlock
     margin-top: 100rem
@@ -760,6 +760,7 @@ b
     color: #ffffff
     font-weight: 400
     font-family: "Rubik"
+    width: 150rem
 .card-trird 
     background: linear-gradient(rgba(20,47,63,.75),rgba(20,47,63,.75)),url(../img/more-information-house.jpg)
 .mainThirdText
@@ -782,6 +783,12 @@ b
     font-family: "Rubik"
     text-align: center
     padding-bottom: 20rem
+    @media screen and (min-width: 375px)
+        padding-right: 50rem
+    @media screen and (min-width: 425px)
+        padding-right: 60rem
+    @media screen and (min-width: 1360px)
+        padding-right: 0
 .topTitleThird
     margin: 0
 .hr-nop
@@ -792,13 +799,22 @@ b
 .card-trird     
     margin: 70rem 0
     height: 300rem
+    min-width: 290rem
+    @media screen and (min-width: 1360px)
+        margin: 0
+.second-block-with-cards
+    @media screen and (min-width: 1360px)
+        margin-top: 70rem
+        display: flex
+        column-gap: 50rem
 .download
     font-size: 12rem
     letter-spacing: 0rem
     text-transform: uppercase
     color: #ffb700
+    position: relative
     font-weight: 400
-    padding: 10rem 30rem
+    padding: 10rem 30rem 10rem 45rem
     font-family: "Rubik"
     text-align: center
     text-decoration: none
@@ -810,7 +826,64 @@ b
     position: absolute
     width: 19rem
     height: 20rem
-    left: 30rem
+    left: 20rem
     background-image: url(../img/cloud.svg)
 .download:hover
     text-decoration: underline
+.two-cards
+    @media screen and (min-width: 1360px)
+        display: flex
+        column-gap: 50rem
+.annaCard
+    text-align: center
+    @media screen and (min-width: 1360px)
+        width: 350rem
+h5
+    font-size: 18rem
+    letter-spacing: 1rem
+    line-height: 26rem
+    display: inline-block
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+.paragrafCenter
+    width: 170rem
+    font-size: 13rem
+    line-height: 16rem
+    color: #999999
+    font-weight: 400
+    font-family: "Rubik"
+    margin: 0 auto
+    padding: 25rem 0
+#ntn
+    color: #333333
+.imgthird
+    background: url(../img/woman.svg), no-repeat
+    min-height: 95rem
+    width: 110rem
+    margin: 10rem auto
+.tel
+    font-size: 18rem
+    line-height: 26rem
+    color: #0099ff
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+    text-decoration: none
+.tel:hover
+    text-decoration: underline
+.ower
+    font-size: 36rem
+    letter-spacing: 1rem
+    width: 225rem
+    margin-top: 0
+    line-height: 40rem
+    text-transform: uppercase
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+    margin: 0 auto
+    padding-top: 50rem
+    @media screen and (min-width: 1360px)
+        margin: 0
+        padding-top: 0
