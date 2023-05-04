@@ -877,10 +877,42 @@ b
     text-align: center
     @media screen and (min-width: 1360px)
         width: 350rem
+.annaCard:before
+    @media screen and (min-width: 768px)
+        content: ""
+        position: absolute
+        bottom: 35rem
+        left: 0
+        width: 20%
+        height: 8.5%
+        border-top: 1rem solid #ffb700
+        border-left: 1rem solid #ffb700
+        border-bottom: 1rem solid #ffb700
+    @media screen and (min-width: 1360px)
+        bottom: 41rem
+        left: 950rem
+        width: 5%
+        height: 27%
+.annaCard:after
+    @media screen and (min-width: 768px)
+        content: ""
+        position: absolute
+        bottom: 35rem
+        right: 0
+        width: 20%
+        height: 8.5%
+        border-top: 1rem solid #ffb700
+        border-right: 1rem solid #ffb700
+        border-bottom: 1rem solid #ffb700
+    @media screen and (min-width: 1360px)
+        bottom: 41rem
+        right: 0
+        width: 5%
+        height: 27%
 h5
     font-size: 18rem
     letter-spacing: 1rem
-    line-height: 26rem
+    line-height: 5rem
     display: inline-block
     color: #333333
     font-weight: 400
