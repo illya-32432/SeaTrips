@@ -456,6 +456,7 @@ p
 
 .best-offer:before
     content: ""
+    z-index: 1
     position: absolute
     width: 0
     height: 0
@@ -464,6 +465,7 @@ p
     border-right: 75rem solid rgba(0,0,0,0)
 .best-offer:after 
     content: ""
+    z-index: 1
     position: absolute
     width: 30rem
     height: 30rem
@@ -473,7 +475,25 @@ p
     animation: star 3s infinite
     //flag
 
+    //bicycle
 
+.bicycle:before
+    content: ""
+    position: absolute
+    width: 90rem
+    height: 205rem
+    background-color: #09f
+.bicycle:after
+    content: ""
+    top: 37.5%
+    width: 80rem
+    height: 80rem
+    left: 5rem
+    position: absolute
+    background-image: url(../img/bike.svg)
+    background-size: cover
+
+    //bicycle
 .hr
     border-top: 1px solid #dfe3e6
     margin: 25rem 0 80rem 0

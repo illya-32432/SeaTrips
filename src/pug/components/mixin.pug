@@ -61,6 +61,7 @@ mixin card (oneCard)
             alt: "romantick",
             topTitleSec: "Романтична подорож на 2",
             zamow: "замовити",
+            bisicle: false,
             description: [
                 "Подорож у найромантичніші",
                 "куточки світу, занурить вас",
@@ -76,6 +77,7 @@ mixin card (oneCard)
             alt: "bikeTrip",
             topTitleSec: "Велотур",
             zamow: "замовити",
+            bisicle: true,
             description: [
                 "Бажаєте прокататись з вітерцем",
                 "та ще й з критим краєвидом довкола?",
@@ -91,6 +93,7 @@ mixin card (oneCard)
             alt: "island-icon",
             topTitleSec: "На острови!",
             price: 1559,
+            bisicle: false,
             currency: "грн.",
             zamow: "замовити",
             description: [
@@ -106,6 +109,7 @@ mixin card (oneCard)
             topTitleSec: "Катання на сьорфінгу",
             price: 999,
             currency: "грн.",
+            bisicle: false,
             zamow: "замовити",
             description: [
                 "Обираючи цю подорож, Ви самостійно",
@@ -117,6 +121,8 @@ mixin cards (oneCardSecond)
     figure.card-secondary
         figcaption.fig
             .best-offer
+            if oneCardSecond.bisicle 
+                .bicycle
             img(id="dontP")(src=oneCardSecond.image, alt=oneCardSecond.alt)
             p.topTitleSec #{oneCardSecond.topTitleSec}
             p
