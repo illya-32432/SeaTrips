@@ -436,9 +436,7 @@ p
 
 
     //flag
-
-
-.best-offer:before
+.best-off:before
     content: ""
     position: absolute
     width: 0
@@ -446,12 +444,30 @@ p
     left: 0.2rem
     border-top: 75rem solid #26cb15
     border-right: 75rem solid rgba(0,0,0,0)
-.best-offer:after 
+.best-off:after 
     content: ""
     position: absolute
     width: 30rem
     height: 30rem
     left: 2rem
+    background-image: url(../img/star.svg)
+    background-size: cover
+    animation: star 3s infinite
+
+.best-offer:before
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    // left: 0.2rem
+    border-top: 75rem solid #26cb15
+    border-right: 75rem solid rgba(0,0,0,0)
+.best-offer:after 
+    content: ""
+    position: absolute
+    width: 30rem
+    height: 30rem
+    // left: 2rem
     background-image: url(../img/star.svg)
     background-size: cover
     animation: star 3s infinite
