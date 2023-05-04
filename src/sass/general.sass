@@ -140,47 +140,48 @@ h1
     color: #ffffff
     font-weight: 400
     font-family: "Rubik"
+    position: relative
     text-align: center
     // position: relative
     margin: 0 0 20rem 0
     @media screen and (min-width: 425px)
         font-size: 72rem
-// h1:before
-//     display: none
-//     content: ""
-//     position: absolute
-//     max-width: 55%
-//     width: 80%
-//     height: 50%
-//     border: 4px solid #fff
-//     opacity: 0.5
-//     top: -75%
-//     left: 24%
-//     border-bottom: none
-//     @media screen and (min-width: 570px)
-//         content: ""
-//         position: absolute
-//         display: block
-//         max-width: 80%
-//         width: 80%
-//         height: 50%
-//         border: 4px solid #fff
-//         opacity: .5
-//         top: -35%
-//         left: 9%
-//         border-bottom: none
-//     @media screen and (min-width: 768px)
-//         max-width: 60%
-//         width: 80%
-//         height: 50%
-//         top: -55%
-//         left: 20%
-//     @media screen and (min-width: 1000px)
-//         width: 40%
-//         left: 30%
-//     @media screen and (min-width: 1360px)
-//         width: 40%
-//         left: 30%   
+h1:before
+    @media screen and (min-width: 768px)
+        content: ""
+        display: block
+        position: absolute
+        top: -50rem
+        left: 50%
+        width: 50%
+        height: 50%
+        border-top: 1rem solid #fff
+        border-left: 1rem solid #fff
+        border-right: 1rem solid #fff
+        opacity: .5
+        transform: translate(-50%)
+    @media screen and (min-width: 1000px)
+        width: 40%
+    @media screen and (min-width: 1360px)
+        width: 30%
+h1:after
+    @media screen and (min-width: 768px)
+        content: ""
+        display: block
+        position: absolute
+        bottom: -180rem
+        left: 50%
+        width: 50%
+        height: 50%
+        border-bottom: 0.26rem solid #fff
+        border-left: 0.26rem solid #fff
+        border-right: 0.26rem solid #fff
+        opacity: .5
+        transform: translate(-50%)
+    @media screen and (min-width: 1000px)
+        width: 40%
+    @media screen and (min-width: 1360px)
+        width: 30%
 p
     font-size: 16rem
     line-height: 24rem
@@ -613,24 +614,6 @@ canvas
     position: absolute
     top: 0
     width: 100%
-// .niam
-//     animation-duration: 20s 
-//     animation-name: slidein 
-// @keyframes slidein 
-//     0% 
-//         margin-left: -100% 
-//         width: 300% 
-//     50%
-//         margin-left: 0% 
-//         width: 100% 
-//         transition: 5s
-//         transform: rotate(36000000deg) translateX(10%)
-//     75% 
-//         font-size: 300% 
-//         margin-left: 25% 
-//         width: 150% 
-//     100%
-//         width: 100% 
 
 .niam
     animation-duration: 2s 
