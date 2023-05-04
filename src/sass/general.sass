@@ -483,6 +483,14 @@ p
     width: 90rem
     height: 205rem
     background-color: #09f
+    @media screen and (min-width: 375px)
+        height: 239rem
+    @media screen and (min-width: 425px)
+        height: 246rem
+    @media screen and (min-width: 1000px)
+        height: 247rem
+    @media screen and (min-width: 1360px)
+        height: 191rem
 .bicycle:after
     content: ""
     top: 60rem
@@ -492,6 +500,10 @@ p
     position: absolute
     background-image: url(../img/bike.svg)
     background-size: cover
+    @media screen and (min-width: 375px)
+        top: 75rem
+    @media screen and (min-width: 1360px)
+        top: 60rem
 .bicycle
     position: relative
     //bicycle
@@ -526,6 +538,7 @@ h2
         font-size: 36rem
 main
     background-color: #f5f8fa
+    padding-bottom: 10rem
 .main-title-all
     font-size: 16px
     margin: 0
@@ -887,3 +900,18 @@ h5
     @media screen and (min-width: 1360px)
         margin: 0
         padding-top: 0
+.bg-palm 
+    border-top: 50rem solid #f4f7f9
+    min-height: 500rem
+    background: url(../img/footer.jpg) center
+    background-size: cover
+    background-repeat: no-repeat
+h6
+    font-size: 13rem
+    line-height: 19rem
+    color: #ffffff
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+    background-color: #1a1a1a
+    padding: 15rem 0
