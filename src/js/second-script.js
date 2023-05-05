@@ -1,5 +1,4 @@
 
-
 var canvass, c, w, h,
     twoPI = Math.PI * 2,
     mX, mY,
