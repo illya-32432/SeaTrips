@@ -1,6 +1,8 @@
 html
     font-size: 1px
     scroll-behavior: smooth
+    @media screen and (min-width: 2300px)
+        font-size: 1.5px
 body
     margin: 0
     scroll-behavior: smooth
@@ -24,12 +26,16 @@ ol
         max-width: 950rem
     @media screen and (min-width: 1360px)
         max-width: 1250rem
+    @media screen and (min-width: 2300px)
+        max-width: 2200px
 .container
     padding-top: 25rem
     display: flex
     justify-content: space-between
     align-items: center
     margin-bottom: 170rem
+    @media screen and (min-width: 2300px)
+        max-width: 2200px
 header
     background: linear-gradient(to bottom,rgba(244,247,249,0) 65%,#f4f7f9 93%,#f5f8fa 100%),url(../img/header-background.jpg), no-repeat
     background-size: cover
@@ -392,6 +398,8 @@ p
         margin-top: 0
         display: flex
         column-gap: 50rem
+    @media screen and (min-width: 2300px)
+        column-gap: 80rem
 .oba
     @media screen and (min-width: 425px)
         max-width: 350rem
@@ -403,6 +411,8 @@ p
         .oba-flex
             display: flex
             column-gap: 50rem
+            @media screen and (min-width: 2300px)
+                column-gap: 80rem
 .oboe
     @media screen and (min-width: 1360px)
         display: flex
@@ -493,6 +503,8 @@ p
         height: 247rem
     @media screen and (min-width: 1360px)
         height: 190rem
+    @media screen and (min-width: 2300px)
+        height: 171rem
 .bicycle:after
     content: ""
     top: 60rem
@@ -689,15 +701,19 @@ b
     @media screen and (min-width: 440px)
         width: 423rem
 .img
-    background: url(../img/koma.svg), no-repeat
+    background: url(../img/koma.svg)
     min-height: 37rem
+    background-repeat: no-repeat
     width: 42rem
     margin: 30rem auto
 .imgsec
-    background: url(../img/photo-Oleg.svg), no-repeat
+    background: url(../img/photo-Oleg.svg)
     min-height: 95rem
     width: 110rem
+    background-repeat: no-repeat
     margin: 10rem auto
+    @media screen and (min-width: 2300px)
+        width: 72rem
 .secondBlock
     margin-top: 100rem
     @media screen and (min-width: 1000px)
@@ -752,6 +768,8 @@ b
         column-gap: 20rem
     @media screen and (min-width: 1360px)
         column-gap: 150rem
+    @media screen and (min-width: 2300px)
+        column-gap: 360rem
 .name-clien
     margin-top: 30rem
 .Name
@@ -905,6 +923,9 @@ b
         left: 950rem
         width: 5%
         height: 27%
+    @media screen and (min-width: 2300px)
+        height: 25%
+        bottom: 65rem
 .annaCard:after
     @media screen and (min-width: 768px)
         content: ""
@@ -921,6 +942,9 @@ b
         right: 0
         width: 5%
         height: 27%
+    @media screen and (min-width: 2300px)
+        height: 25%
+        bottom: 65rem
 h5
     font-size: 18rem
     letter-spacing: 1rem
@@ -941,10 +965,13 @@ h5
 #ntn
     color: #333333
 .imgthird
-    background: url(../img/woman.svg), no-repeat
+    background: url(../img/woman.svg)
     min-height: 95rem
     width: 110rem
+    background-repeat: no-repeat
     margin: 10rem auto
+    @media screen and (min-width: 2300px)
+        width: 80rem
 .tel
     font-size: 18rem
     line-height: 26rem
