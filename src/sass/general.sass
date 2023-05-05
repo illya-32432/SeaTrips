@@ -402,9 +402,15 @@ p
     padding-bottom: 10rem
 .other-card
     margin-top: 80rem
+    @media screen and (min-width: 768px)
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        column-gap: 50rem
+        row-gap: 50rem
     @media screen and (min-width: 1360px)
         margin-top: 0
-        display: flex
+        flex-wrap: nowrap
         column-gap: 50rem
     @media screen and (min-width: 2300px)
         column-gap: 80rem
@@ -509,7 +515,7 @@ p
     @media screen and (min-width: 425px)
         height: 246rem
     @media screen and (min-width: 768px)
-        height: 247rem
+        height: 190rem
     @media screen and (min-width: 1360px)
         height: 190rem
     @media screen and (min-width: 2300px)
@@ -549,6 +555,13 @@ p
         background-size: cover
 .first-card
     max-width: 400rem
+    margin: 0 auto
+    @media screen and (min-width: 768px)
+        max-width: 260rem
+        margin: 0 auto
+    @media screen and (min-width: 1360px)
+        max-width: 400rem
+        margin: 0 
 h2
     font-size: 25rem
     line-height: 42px
@@ -557,7 +570,7 @@ h2
     font-weight: 400
     font-family: "Rubik"
     margin-top: 30rem
-    @media screen and (min-width: 4225px)
+    @media screen and (min-width: 425px)
         font-size: 36rem
 main
     background-color: #f5f8fa
