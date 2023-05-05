@@ -412,9 +412,10 @@ p
     @media screen and (min-width: 425px)
         max-width: 350rem
         margin: 0 auto
-    @media screen and (min-width: 1360px)
+    @media screen and (min-width: 768px)
         max-width: 100%
         margin: 0 auto
+    @media screen and (min-width: 1360px)
         display: flex
         .oba-flex
             display: flex
@@ -915,6 +916,10 @@ b
 .download:hover
     text-decoration: underline
 .two-cards
+    @media screen and (min-width: 768px)
+        display: flex
+        column-gap: 50rem
+        justify-content: center
     @media screen and (min-width: 1360px)
         display: flex
         column-gap: 50rem
