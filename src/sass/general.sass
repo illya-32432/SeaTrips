@@ -453,6 +453,7 @@ p
     letter-spacing: 0rem
     font-style: normal
     text-decoration: none
+    position: relative
     text-transform: uppercase
     color: #0099ff
     font-weight: 400
@@ -460,7 +461,25 @@ p
     text-align: center
 .lastTitle:hover
     text-decoration: underline
-
+.lastTitle:before
+    content: ""
+    position: absolute
+    top: -2rem
+    right: -28rem
+    width: 20rem
+    height: 20rem
+    border: 2px solid #09f
+    border-radius: 50%
+.lastTitle:after
+    content: ""
+    position: absolute
+    width: 6rem
+    top: 5rem
+    right: -20rem
+    height: 6rem
+    border-bottom: 2px solid #09f
+    border-right: 2px solid #09f
+    transform: rotate(-45deg)
 
     //flag
 .best-off:before
@@ -857,7 +876,28 @@ b
     color: #ffb700
     font-weight: 400
     font-family: "Rubik"
+    position: relative
     text-align: center
+.yello-Style:before
+    content: ""
+    position: absolute
+    top: 0rem
+    right: -28rem
+    width: 20rem
+    height: 20rem
+    border: 2px solid #ffb700
+    border-radius: 50%
+.yello-Style:after
+    content: ""
+    position: absolute
+    width: 6rem
+    top: 7rem
+    right: -20rem
+    height: 6rem
+    border-bottom: 2px solid #ffb700
+    border-right: 2px solid #ffb700
+    transform: rotate(-45deg)
+
 .flex
     display: flex
     column-gap: 10rem
