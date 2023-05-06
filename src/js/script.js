@@ -8,12 +8,6 @@ burger.onclick = function () {
 
                   //up burger
 
-
-
-
-
-
-
 'use strict'
 
 const canvas = document.querySelector('canvas')
